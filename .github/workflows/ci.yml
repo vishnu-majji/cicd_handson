@@ -27,3 +27,6 @@ jobs:
 
     - name: run tests
       run: pytest
+
+    - name: Build docker image
+      run: docker build -t cicd_handson:${{github.sha}} .
