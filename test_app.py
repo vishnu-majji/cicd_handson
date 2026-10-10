@@ -4,4 +4,4 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Something Wrong" in response.data
+    assert b"Hello from CI/CD Pipeline!" in response.data
